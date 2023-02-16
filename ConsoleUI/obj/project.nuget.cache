@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZitzrKHKD9q7gOs2D6OS7O+AH7BPqqVvikHy7UDXMvJDlZvzgQc6AdV+qCBlAM7f+4vbaNXIc8TI0a8PstJhNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb

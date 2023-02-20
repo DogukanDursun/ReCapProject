@@ -7,3 +7,6 @@ C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete

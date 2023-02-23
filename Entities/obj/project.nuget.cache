@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7qkFNiA9HXESqPvMT1gdg5Ek90HmOn40rwflVPW/35SC9dVt0KTiIAICzN29UL04fFFZdnUE6fVp5x5kzhVjYA==",
+  "dgSpecHash": "ue2gNAYuZ2QEvhEOmfju3miSWYG60y/eU1ZTacMWd9MYCDLJBoYsF28IeR59WDG61SIwvIngmsQxw4HXqkZkFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

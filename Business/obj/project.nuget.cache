@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mA4RiZKoHPHbQ3nJHta85xuYHHbdEIGkxYVgmG/huPEWrLH/ybLVb5Olyzaws8CsloDBbg4yVjwciIps6DEI5Q==",
+  "dgSpecHash": "XS6JweFEtPQlyPhrni13jo7imZvR1wmpjtpExV4xdvodk+d7l3/n76Et/NVd1bxMtPGKrdIrlr+EPrmH35RoXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

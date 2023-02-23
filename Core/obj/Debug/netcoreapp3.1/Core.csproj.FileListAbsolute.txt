@@ -1,18 +1,9 @@
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.deps.json
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.dll
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.pdb
-C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.dll
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.pdb
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.deps.json
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.dll
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.pdb
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.dll
-C:\Users\hp\Documents\GitHub\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache

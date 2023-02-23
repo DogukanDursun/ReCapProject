@@ -5694,11 +5694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5719,8 +5719,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\ReCapProject\\Entities\\Entities.csproj"
+            "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\190705038_Doğukan Dursun\\C# Dersleri\\ReCapProject\\Entities\\Entities.csproj"
             }
           }
         }

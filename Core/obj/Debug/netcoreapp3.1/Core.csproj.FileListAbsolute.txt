@@ -6,4 +6,5 @@ C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.dll
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.pdb
-C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig

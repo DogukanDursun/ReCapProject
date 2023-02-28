@@ -61,3 +61,8 @@ C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.AssemblyReference.cache
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\FluentValidation.dll

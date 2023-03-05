@@ -11,11 +11,21 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             CarManager();
-            UsersManager user1 = new UsersManager(new EfUsersDal());
-            Console.WriteLine(user1.Add(new Users { FirstName = "Doğukan", LastName = "Dursun",
-                Email = "dogukandursun@gmail.com", Password = "12345" }).Message);
-            Console.ReadLine();
+            //UsersAdd();
 
+        }
+
+        private static void UsersAdd()
+        {
+            UsersManager user1 = new UsersManager(new EfUsersDal());
+            Console.WriteLine(user1.Add(new Users
+            {
+                FirstName = "Doğukan",
+                LastName = "Dursun",
+                Email = "dogukandursun@gmail.com",
+                Password = "12345"
+            }).Message);
+            Console.ReadLine();
         }
 
         private static void CarManager()

@@ -17,9 +17,11 @@ namespace Business.Concrete
     public class CarImageManager : ICarImagesService
     {
         ICarImagesDal _carImagesDal;
+
         public CarImageManager(ICarImagesDal carImagesDal)
         {
             _carImagesDal = carImagesDal;
+            
         }
         public IResult Add(IFormFile file, CarImages carImage)
         {

@@ -75,3 +75,5 @@ C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\WebAPI\bi
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentAssertions.dll
+C:\Users\hp\Desktop\190705038_Doğukan Dursun\C# Dersleri\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

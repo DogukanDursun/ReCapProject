@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Business;
 using Core.Utilities.Helpers;
 using Core.Utilities.Results;
@@ -23,6 +26,8 @@ namespace Business.Concrete
             _carImagesDal = carImagesDal;
             
         }
+        [SecuredOperation("product.add,admin")]
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(IFormFile file, CarImages carImage)
         {
             IResult result = BusinessRules.Run(CheckIfImageLimitExceeded(carImage.CarId));
@@ -106,7 +111,7 @@ namespace Business.Concrete
             {
                 return new List<CarImages> { new CarImages { CarId = carId, ImagePath = path, Date = DateTime.Now } };
             }
-            return _carImagesDal.GetAll(p => p.CarId == carId);
+            return _carImagesDal.GetAll(c => c.CarId == carId);
         }
     }
 }

@@ -10,12 +10,12 @@ namespace Business.ValidationRules.FluentValidation
     {
         public CarValidator()
         {
-            RuleFor(p => p.Description).NotEmpty();
-            RuleFor(p => p.Description).MinimumLength(2);
-            RuleFor(p => p.DailyPrice).NotEmpty();
-            RuleFor(p => p.DailyPrice).GreaterThan(0);
-            RuleFor(p => p.DailyPrice).GreaterThanOrEqualTo(10).When(p => p.BrandId == 1);
-            RuleFor(p => p.Description).Must(StarWithA).WithMessage("Araç açıklamaları A Harfi ile başlamalı");
+            RuleFor(c => c.Description).NotEmpty();
+            RuleFor(c => c.Description).MinimumLength(2);
+            RuleFor(c => c.DailyPrice).NotEmpty();
+            RuleFor(c => c.DailyPrice).GreaterThan(0);
+            RuleFor(c => c.DailyPrice).GreaterThanOrEqualTo(10).When(c => c.BrandId == 1);
+            RuleFor(c => c.Description).Must(StarWithA).WithMessage("Araç açıklamaları A Harfi ile başlamalı");
 
         }
 

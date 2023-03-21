@@ -36,7 +36,7 @@ namespace WebAPI
         {
             //Autofac, Ninject,CastleWindsor,StructureMap,LightInject,DryInject,--> IoC Container
             services.AddControllers();
-        
+            services.AddCors();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -65,7 +65,7 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(builder=>builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
             app.UseHttpsRedirection();
 
             app.UseRouting();

@@ -29,6 +29,12 @@ namespace Business.Constants
         public static string CarNameAlreadyExists="Araba Adı Zaten Var";
         public static string CarCountOfCategoryError="Bu Kategoriye Çok Fazla Araç Eklediniz";
         public static string CarUpdated="Araba Güncellendi";
+        internal static string SuccesAdded="Ekleme Başarılı";
+        internal static string SuccesDeleted;
+        internal static string SuccesUpdated;
+        internal static string CarDetails;
+        internal static string CarGetAll;
+        internal static string CarListed;
     }
 
 }

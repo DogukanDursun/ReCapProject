@@ -41,7 +41,7 @@ namespace Core.Utilities.Helpers
 
         private static string NewPath(string file)
         {
-            string path = Environment.CurrentDirectory + @"\wwwroot\Images"; 
+            string path = Environment.CurrentDirectory + @"\wwwroot\Uploads\Images"; 
 
             string result = $@"{path}\{file}";
             return result;

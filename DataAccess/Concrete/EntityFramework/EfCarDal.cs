@@ -22,49 +22,79 @@ namespace DataAccess.Concrete.EntityFramework
                              on c.BrandId equals b.Id
                              join co in context.Colors
                              on c.ColorId equals co.ColorId
-                             select new CarDetailDTO 
+                             select new CarDetailDTO
                              {
-                                 Id=c.Id,
-                                 BrandId=b.Id,
-                                 ColorId=co.ColorId,
-                                 BrandName=b.BrandName,
-                                 ColorName=co.ColorName,
-                                 Description=c.Description,
-                                 DailyPrice=c.DailyPrice
+                                 Model = c.Model,
+                                 Id = c.Id,
+                                 BrandId = b.Id,
+                                 ColorId = co.ColorId,
+                                 BrandName = b.BrandName,
+                                 ColorName = co.ColorName,
+                                 Description = c.Description,
+                                 DailyPrice = c.DailyPrice
                              };
                 return result.ToList();
             }
         }
-        //public List<CarDetailDTO> GetCarDetailss()
-        //{
-        //    using (CarsContext context = new CarsContext())
-        //    {
-        //        var result = from car in context.Cars
-        //                     join brand in context.Brands
-        //                         on car.BrandId equals brand.Id
-        //                     join color in context.Colors
-        //                         on car.ColorId equals color.ColorId
+        public List<CarDetailDTO> GetCarDetailsByBrand(int brandId)
+        {
+            using (CarsContext context = new CarsContext())
+            {
+                var result = from car in context.Cars
+                             join brand in context.Brands on car.BrandId equals brand.Id
+                             join color in context.Colors on car.ColorId equals color.ColorId
+                             where car.BrandId == brandId
+                             select new CarDetailDTO
+                             {
+                                 BrandName = brand.BrandName,
+                                 Id = car.Id,
+                                 BrandId = brand.Id,
+                                 ColorId = color.ColorId,
 
-        //                     select new CarDetailDTO
-        //                     {
-        //                         Id = car.Id,
-        //                         BrandId = brand.Id,
-        //                         ColorId = color.ColorId,
+                                 ColorName = color.ColorName,
+                                 DailyPrice = car.DailyPrice,
+                                 ModelYear = car.ModelYear,
+                                 Description = car.Description,
+                                 Model = car.Model,
+                                 ImagePath = (from img in context.CarImages
+                                              where img.CarId == car.Id
+                                              select img.ImagePath).FirstOrDefault()
 
-        //                         Description = car.Description,
-        //                         BrandName = brand.BrandName,
-        //                         ColorName = color.ColorName,
 
-        //                         ModelYear = car.ModelYear,
-        //                         DailyPrice = car.DailyPrice,
-                           
-                                
-        //                     };
-        //        return result.ToList();
-        //    }
-        
+                             };
+                return result.ToList();
+            }
+            //public List<CarDetailDTO> GetCarDetailss()
+            //{
+            //    using (CarsContext context = new CarsContext())
+            //    {
+            //        var result = from car in context.Cars
+            //                     join brand in context.Brands
+            //                         on car.BrandId equals brand.Id
+            //                     join color in context.Colors
+            //                         on car.ColorId equals color.ColorId
+
+            //                     select new CarDetailDTO
+            //                     {
+            //                         Id = car.Id,
+            //                         BrandId = brand.Id,
+            //                         ColorId = color.ColorId,
+
+            //                         Description = car.Description,
+            //                         BrandName = brand.BrandName,
+            //                         ColorName = color.ColorName,
+
+            //                         ModelYear = car.ModelYear,
+            //                         DailyPrice = car.DailyPrice,
+
+
+            //                     };
+            //        return result.ToList();
+            //    }
+
         }
     }
+}
 
 
 

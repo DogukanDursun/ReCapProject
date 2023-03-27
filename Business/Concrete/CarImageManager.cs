@@ -74,8 +74,8 @@ namespace Business.Concrete
             {
                 return result;
             }
-            
-          carImages.Date = DateTime.Now;
+
+            carImages.Date = DateTime.Now;
             string oldPath = GetByImageId(carImages.Id).Data.ImagePath;
             carImages.ImagePath = FileHelper.Update(oldPath, file);
             return new SuccessResult();
@@ -83,7 +83,7 @@ namespace Business.Concrete
         private IResult CheckIfImageLimitExceeded(int carId)
         {
             var carImageCount = _carImagesDal.GetAll(c => c.CarId == carId).Count;
-            if (carImageCount >5)
+            if (carImageCount > 5)
             {
                 return new ErrorResult();
             }
@@ -115,3 +115,6 @@ namespace Business.Concrete
         }
     }
 }
+   
+    
+

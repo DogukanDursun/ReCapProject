@@ -68,9 +68,15 @@ namespace Business.Concrete
            
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.CarsListed);
         }
-        public IDataResult <List<Car>> GetCarsByBrandId(int id)
+        public IDataResult<List<CarDetailDTO>> GetCarDetailsByColor( int colorId)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.BrandId == id));
+            return new SuccessDataResult<List<CarDetailDTO>>(
+               _carDal.GetCarDetails()
+               .Where(c => c.ColorId == colorId).ToList());
+        }
+        public IDataResult <List<CarDetailDTO>> GetCarsByBrandId(int id)
+        {
+            return new SuccessDataResult<List<CarDetailDTO>>(_carDal.GetCarDetailsByBrand(id));
         }
 
         public IDataResult<List<Car>> GetCarsByColorId(int id)
@@ -109,5 +115,7 @@ namespace Business.Concrete
             _carDal.Delete(product);
             return new SuccessResult(Messages.CarUpdated);
         }
+
+     
     }
 }

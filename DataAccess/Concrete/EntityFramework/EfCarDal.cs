@@ -64,33 +64,7 @@ namespace DataAccess.Concrete.EntityFramework
                              };
                 return result.ToList();
             }
-            //public List<CarDetailDTO> GetCarDetailss()
-            //{
-            //    using (CarsContext context = new CarsContext())
-            //    {
-            //        var result = from car in context.Cars
-            //                     join brand in context.Brands
-            //                         on car.BrandId equals brand.Id
-            //                     join color in context.Colors
-            //                         on car.ColorId equals color.ColorId
-
-            //                     select new CarDetailDTO
-            //                     {
-            //                         Id = car.Id,
-            //                         BrandId = brand.Id,
-            //                         ColorId = color.ColorId,
-
-            //                         Description = car.Description,
-            //                         BrandName = brand.BrandName,
-            //                         ColorName = color.ColorName,
-
-            //                         ModelYear = car.ModelYear,
-            //                         DailyPrice = car.DailyPrice,
-
-
-            //                     };
-            //        return result.ToList();
-            //    }
+           
 
         }
     }

@@ -26,8 +26,8 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-        [SecuredOperation("product.add,admin")]
-        [ValidationAspect(typeof(CarValidator))]
+        //[SecuredOperation("product.add,admin")]
+       // [ValidationAspect(typeof(CarValidator))]
       
         public IResult Add(Car car)
         {
@@ -61,12 +61,7 @@ namespace Business.Concrete
         }
         public IDataResult <List<Car>> GetAll()
         {
-            if (DateTime.Now.Hour == 22)
-            {
-                return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
-            }
-           
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.CarsListed);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll());
         }
         public IDataResult<List<CarDetailDTO>> GetCarDetailsByColor( int colorId)
         {
@@ -86,8 +81,11 @@ namespace Business.Concrete
 
         public IDataResult<List<CarDetailDTO>> GetCarDetails()
         {
-            return new SuccessDataResult<List<CarDetailDTO>>(_carDal.GetCarDetails());
+
+            return new SuccessDataResult<List<CarDetailDTO>>(_carDal.GetCarDetails(), Messages.CarsListed);
+
         }
+
         private IResult CheckIfProductCountOfCategoryCorrect(int categoryId)
         {
             var result = _carDal.GetAll(c => c.BrandId == categoryId).Count;
@@ -110,12 +108,35 @@ namespace Business.Concrete
         }
 
         [TransactionScopeAspect]
-        public IResult AddTransactional(Car product)
+        public IResult AddTransactional(Car car)
         {
-            _carDal.Delete(product);
+            _carDal.Delete(car);
             return new SuccessResult(Messages.CarUpdated);
         }
 
-     
+        public IDataResult<List<CarDetailDTO>> GetCarDetailsByColorAndBrand(int brandId, int colorId)
+        {
+            return new SuccessDataResult<List<CarDetailDTO>>(
+              _carDal.GetCarDetails()
+              .Where(c => c.BrandId == brandId && c.ColorId == colorId).ToList());
+        }
+
+        public IResult Delete(Car entity)
+        {
+            _carDal.Delete(entity);
+            return new SuccessResult(Messages.CarDeleted);
+        }
+
+        public IDataResult<List<CarDetailDTO>> GetByCarDetailId(int Id)
+        {
+            return new SuccessDataResult<List<CarDetailDTO>>(
+               _carDal.GetCarDetails()
+               .Where(c => c.Id == Id).ToList());
+        }
+
+        public IDataResult<List<CarDetailDTO>> GetCarDetailsById(int carid)
+        {
+            return new SuccessDataResult<List<CarDetailDTO>>(_carDal.GetCarDetails().Where(c => c.Id == carid).ToList());
+        }
     }
 }

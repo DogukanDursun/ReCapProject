@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -48,7 +49,7 @@ namespace Business.Concrete
             return new SuccessDataResult<Rentals>(_rentals.Get(r => r.CarId == carId));
         }
 
-       
+
 
         public IDataResult<Rentals> GetByRentalId(int rentalId)
         {
@@ -69,6 +70,59 @@ namespace Business.Concrete
         {
             _rentals.Update(rentals);
             return new SuccessResult(Messages.RentalUpdated);
+        }
+        public IResult RulesForAdding(Rentals entity)
+        {
+            var result = BusinessRules.Run(
+                CheckIfThisCarIsAlreadyRentedInSelectedDateRange(entity),
+                CheckIfReturnDateIsBeforeRentDate(entity.ReturnDate, entity.RentDate)
+                );
+            if (result != null)
+            {
+                return result;
+            }
+
+
+            return new SuccessResult("Ödeme Sayfasına Yönlendiriliyorsunuz.");
+
+        }
+        private IResult CheckIfThisCarIsAlreadyRentedInSelectedDateRange(Rentals entity)
+        {
+            var result = _rentals.Get(r =>
+            r.CarId == entity.CarId
+            && (r.RentDate.Date == entity.RentDate.Date
+            || (r.RentDate.Date < entity.RentDate.Date
+            && (r.ReturnDate == null
+            || ((DateTime)r.ReturnDate).Date > entity.RentDate.Date))));
+
+            if (result != null)
+            {
+                return new ErrorResult(Messages.ThisCarIsAlreadyRentedInSelectedDateRange);
+            }
+            return new SuccessResult();
+        }
+
+        private IResult CheckIfThisCarHasBeenReturned(Rentals entity)
+        {
+            var result = _rentals.Get(r => r.CarId == entity.CarId && r.ReturnDate == null);
+
+            if (result != null)
+            {
+                if (entity.ReturnDate == null || entity.ReturnDate > result.RentDate)
+                {
+                    return new ErrorResult(Messages.ThisCarIsAlreadyRentedInSelectedDateRange);
+                }
+            }
+            return new SuccessResult();
+        }
+        private IResult CheckIfReturnDateIsBeforeRentDate(DateTime? returnDate, DateTime rentDate)
+        {
+            if (returnDate != null)
+                if (returnDate < rentDate)
+                {
+                    return new ErrorResult(Messages.ThisCarIsAlreadyRentedInSelectedDateRange);
+                }
+            return new SuccessResult();
         }
     }
 }

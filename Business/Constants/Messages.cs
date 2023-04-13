@@ -35,6 +35,8 @@ namespace Business.Constants
         internal static string CarDetails;
         internal static string CarGetAll;
         internal static string CarListed;
+        internal static string ThisCarIsAlreadyRentedInSelectedDateRange;
+        internal static string CarDeleted;
     }
 
 }

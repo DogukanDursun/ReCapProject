@@ -20,7 +20,7 @@ namespace Business.Concrete
         {
             _ColorDal = colorDal;
         }
-        [ValidationAspect(typeof(ColorValidator))]
+       // [ValidationAspect(typeof(ColorValidator))]
         public IResult Add(Color color)
         {
             IResult result = BusinessRules.Run(CheckIfColorNameExist(color.ColorName));

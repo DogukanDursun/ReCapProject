@@ -48,6 +48,16 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+        [HttpPost("rulesforadding")]
+        public IActionResult RulesForAdding(Rentals entity)
+        {
+            var result = _rentalService.RulesForAdding(entity);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
         [HttpGet("getall")]
         public IActionResult GetAll()
         {

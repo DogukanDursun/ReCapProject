@@ -10,7 +10,7 @@ namespace Business.Abstract
     public interface IRentalsService
     {
         IDataResult<List<Rentals>> GetRentalByCarId(int CarId);
-  
+        IResult RulesForAdding(Rentals entity);
         IDataResult<Rentals> GetByRentalId(int rentalId);
         IDataResult<Rentals> GetByCarId(int carId);
 
